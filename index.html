@@ -520,7 +520,7 @@
     <div id="judging" class="tab-content active">
         <div class="pitch-timer">
             <h3>⏱️ Pitch Timer</h3>
-            <div class="timer-display" id="timerDisplay">05:00</div>
+            <div class="timer-display" id="timerDisplay">15:00</div>
             <div class="timer-buttons">
                 <button class="save-btn" onclick="startTimer()">Start</button>
                 <button class="excel-btn" onclick="pauseTimer()">Pause</button>
@@ -572,8 +572,10 @@
                     </td>
                     <td class="score-guide">
                         <span class="highlight">5 – Groundbreaking innovation; highly original concept</span><br>
-                        3-4 – Innovative, with some unique aspects<br>
-                        1-2 – Some originality but largely similar to existing ideas<br>
+                        4 – Very innovative, with unique aspects<br>
+                        3 – Moderately innovative, some originality<br>
+                        2 – Slightly innovative, mostly similar to existing ideas</span><br>
+                        1 – Minimal innovation, lacks originality<br>
                         0 – No original elements / used ChatGbt
                         <div class="shark-rating">
                             Quick rate: 
@@ -595,9 +597,11 @@
                     </td>
                     <td class="score-guide">
                         <span class="highlight">5 – Excellent problem understanding and solution alignment</span><br>
-                        3-4 – Good problem fit, but minor gaps exist<br>
-                        1-2 – Problem and solution are loosely connected<br>
-                        0 – Solution does not address the stated problem / used ChatGbt
+                        4 – Very good problem fit with minor gaps<br>
+                        3 – Good problem fit but noticeable gaps<br>
+                        2 – Problem and solution are loosely connected<br>
+                        1 – Minimal connection between problem and solution<br>
+                        0 – Solution does not address the stated problem
                         <div class="shark-rating">
                             Quick rate: 
                             <span onclick="setScore(2, 1)">1</span>
@@ -618,8 +622,10 @@
                     </td>
                     <td class="score-guide">
                         <span class="highlight">5 – Well-structured business model; highly scalable</span><br>
-                        3-4 – Business model is clear but scalability is uncertain<br>
-                        1-2 – Business model is vague or unsustainable<br>
+                        4 – Clear business model with minor scalability concerns<br>
+                        3 – Business model is clear but scalability is uncertain<br>
+                        2 – Business model has significant gaps or lacks clarity<br>
+                        1 – Business model is vague or unsustainable<br>
                         0 – No business model presented / used ChatGbt
                         <div class="shark-rating">
                             Quick rate: 
@@ -641,8 +647,10 @@
                     </td>
                     <td class="score-guide">
                         <span class="highlight">5 – Highly engaging, clear, and convincing pitch</span><br>
-                        3-4 – Good pitch with minor gaps in clarity or engagement<br>
-                        1-2 – Basic pitch; lacked clarity or persuasiveness<br>
+                        4 – Very good pitch with minor gaps in clarity or engagement<br>
+                        3 – Good pitch with noticeable gaps<br>
+                        2 – Basic pitch; lacked clarity or persuasiveness<br>
+                        1 – Minimal effort in pitch delivery<br>
                         0 – Incomplete or ineffective pitch
                         <div class="shark-rating">
                             Quick rate: 
@@ -1734,7 +1742,7 @@
         
         function resetTimer() {
             pauseTimer();
-            timeLeft = 5 * 60; // Reset to 5 minutes
+            timeLeft = 15 * 60; // Reset to 5 minutes
             updateTimerDisplay();
         }
         
@@ -1757,7 +1765,7 @@
                 `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
             
             // Update progress bar
-            const percent = (timeLeft / (5 * 60)) * 100;
+            const percent = (timeLeft / (15 * 60)) * 100;
             document.getElementById('timerProgressBar').style.width = percent + '%';
             
             // Change color based on time left
