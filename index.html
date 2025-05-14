@@ -574,7 +574,7 @@
                         <span class="highlight">5 – Groundbreaking innovation; highly original concept</span><br>
                         3-4 – Innovative, with some unique aspects<br>
                         1-2 – Some originality but largely similar to existing ideas<br>
-                        0 – No original elements
+                        0 – No original elements / used ChatGbt
                         <div class="shark-rating">
                             Quick rate: 
                             <span onclick="setScore(1, 1)">1</span>
@@ -591,13 +591,13 @@
                     <td class="criteria-desc">
                         • Clear identification of the problem being solved<br>
                         • Relevance of the solution to the problem<br>
-                        • Potential impact of the solution on the target audience
+                        • Potential impact of the solution on the target audience 
                     </td>
                     <td class="score-guide">
                         <span class="highlight">5 – Excellent problem understanding and solution alignment</span><br>
                         3-4 – Good problem fit, but minor gaps exist<br>
                         1-2 – Problem and solution are loosely connected<br>
-                        0 – Solution does not address the stated problem
+                        0 – Solution does not address the stated problem / used ChatGbt
                         <div class="shark-rating">
                             Quick rate: 
                             <span onclick="setScore(2, 1)">1</span>
@@ -614,13 +614,13 @@
                     <td class="criteria-desc">
                         • Clear and sustainable business model<br>
                         • Defined revenue streams and cost structure<br>
-                        • Scalability potential in different markets or regions
+                        • Scalability potential in different markets or regions 
                     </td>
                     <td class="score-guide">
                         <span class="highlight">5 – Well-structured business model; highly scalable</span><br>
                         3-4 – Business model is clear but scalability is uncertain<br>
                         1-2 – Business model is vague or unsustainable<br>
-                        0 – No business model presented
+                        0 – No business model presented / used ChatGbt
                         <div class="shark-rating">
                             Quick rate: 
                             <span onclick="setScore(3, 1)">1</span>
@@ -749,12 +749,46 @@
 
     <script>
         // Initialize teams data
-        let teams = [
-            { id: 1, name: "Code Crushers", project: "AI Tutor", members: "Alice, Bob, Charlie" },
-            { id: 2, name: "Byte Me", project: "Smart Fridge", members: "David, Eve" },
-            { id: 3, name: "The Hackers", project: "AR Shopping", members: "Frank, Grace, Helen" }
+       
+    let teams = [
+            {
+                id: 1,
+                name: "Innovators Anonymous",
+                project: "Unknown", // Project info not provided
+                members: "Bongani Mkhize, Joel Dube, Mbali Ngwenya, Reneilwe Kekana, Samukelo Mabika"
+            },
+            {
+                id: 2,
+                name: "The Brain Trust",
+                project: "Unknown",
+                members: "Lenge Dimukayi, Philisiwe Shezi, Alwaba Hlam, Ntshunxeko Nkuna, Itumeleng Mokwena"
+            },
+            {
+                id: 3,
+                name: "Visionaries Unleashed",
+                project: "Unknown",
+                members: "Tlokotse Mogudi, Bridgett Phoshoko, Jack Mazibuko. Kekeletso Nkele, Vincent Mudau"
+            },
+            {
+                id: 4,
+                name: "The Ideation Nation",
+                project: "Unknown",
+                members: "Xolisile Mtetwa, Patrick Nkonyana, Tshepo Maluleka, Siphokazi"
+            },
+            {
+                id: 5,
+                name: "Game Changers",
+                project: "Unknown",
+                members: "Reneilwe Kekana, Samukelo Mabika, Tlokotse Mogudi, Umme-Roomaan Allie"
+            },
+            {
+                id: 6,
+                name: "Breakthrough Brigade",
+                project: "Unknown",
+                members: "Deandre Marionbok, Siphokazi Simbini, Mathabo Kgatle, Siphelele"
+            }
         ];
-        
+                
         // Initialize evaluations data
         let evaluations = [];
         
