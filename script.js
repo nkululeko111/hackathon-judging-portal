@@ -2,37 +2,37 @@ let teams = [
         {
             id: 1,
             name: "Innovators Anonymous",
-            project: "Unknown", // Project info not provided
+            project: "Honey Pots Organics", // Project info not provided
             members: "Bongani Mkhize, Joel Dube, Mbali Ngwenya, Reneilwe Kekana, Samukelo Mabika"
         },
         {
             id: 2,
             name: "The Brain Trust",
-            project: "Unknown",
+            project: "Fees App",
             members: "Lenge Dimukayi, Philisiwe Shezi, Alwaba Hlam, Ntshunxeko Nkuna, Itumeleng Mokwena"
         },
         {
             id: 3,
             name: "Visionaries Unleashed",
-            project: "Unknown",
+            project: "iHealth",
             members: "Tlokotse Mogudi, Bridgett Phoshoko, Jack Mazibuko. Kekeletso Nkele, Vincent Mudau"
         },
         {
             id: 4,
             name: "The Ideation Nation",
-            project: "Unknown",
-            members: "Xolisile Mtetwa, Patrick Nkonyana, Tshepo Maluleka, Siphokazi"
+            project: "The giftBox",
+            members: "Xolisile Mtetwa, Patrick Nkonyana, Tshepo Maluleka, Nobuhle"
         },
         {
             id: 5,
             name: "Game Changers",
-            project: "Unknown",
-            members: "Reneilwe Kekana, Samukelo Mabika, Tlokotse Mogudi, Umme-Roomaan Allie"
+            project: "Ubuntu SchoolNet",
+            members: " Umme-Roomaan Allie, Palesa, Martin, kabelo"
         },
         {
             id: 6,
             name: "Breakthrough Brigade",
-            project: "Unknown",
+            project: "WeWork Logistics Delivery",
             members: "Deandre Marionbok, Siphokazi Simbini, Mathabo Kgatle, Siphelele"
         }
     ];
